@@ -38,23 +38,24 @@
       }
 
       /* Video pitch and Action */
-      .navigation, .pitch, .section1, .section2, .faq, .footer{
-        padding: 10px 0px 10px 0px;
+      .pitch {
+        padding: 2.5% 0%;
       }
-      .video, .thermometer, .order, .social{
-        border: 1px dotted;
+      .order {
+        padding: 2% 0%;
+      }
+      .actions {
+        background-color: #343434;
+        padding: 3% 0%;
+      }
+      .video, .thermometer, .order, .social, .statistics{
         text-align:center;
       }
-      .video {
-        /* Internal borders have 1px width, thus need to add 4 x 1px to 120px0. */
-        height: 124px;
-        line-height: 124px;
+      .statistics h3, .statistics p {
+        color: white;
       }
-      .thermometer, .order, .social {
-        /* line-height to vertically center: http://phrogz.net/css/vertical-align/index.html */
-        height: 40px;
-        line-height: 40px;
-      }
+      
+      /* Marketing Copy and Footer */
       div.row {
         border: 1px solid;
       }
@@ -100,10 +101,12 @@
 	<p class="lead">One sentence description.</p>
       </div>
     </div>      
-    <div class="row pitch">
-      <div class="span6 video">
-	Video
+    <div class="row-fluid pitch">
+      <div class="span5 offset1 video">
+	<img class="img-polaroid" src="http://placehold.it/470x300">
       </div>
+
+      <!-- We define a new 'actions' div to contain statistics, order, and share buttons. -->
       <div class="span6">
 	<div class="thermometer">
 	  Thermometer
